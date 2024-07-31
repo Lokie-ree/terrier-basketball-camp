@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="hero-content text-vc-blue text-center">
         <div className="max-w-md">
           
-          <button className="btn rounded-full bg-vc-blue text-vc-gold">Get Started</button>
+          <button className="btn glass bg-vc-blue text-vc-gold">Get Started</button>
         </div>
       </div>
 </div>

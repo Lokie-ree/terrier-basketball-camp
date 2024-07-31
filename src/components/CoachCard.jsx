@@ -1,27 +1,18 @@
+// components/CoachCard.js
 import React from 'react'
 
-const CoachCard = () => {
+const CoachCard = ({ name, bio, image }) => (
+  <div className="card shadow-lg compact side bg-vc-blue text-vc-gold">
+    <figure>
+      <img className="w-32 h-32 object-cover rounded-full"
+           src={image} 
+           alt={`${name}'s picture`} />
+    </figure>
+    <div className="card-body">
+      <h2 className="card-title">{name}</h2>
+      <p>{bio}</p>
+    </div>
+  </div>
+);
 
-  const coachImg = "/images/waski_profile.jpg";
-
-  return (
-    <>
-      <div className="borderRadius-10 p-20 m-10 text-center">
-        <img className="h-auto borderRadius-50%"
-             src={coachImg}
-             alt="Coach Picture"
-        >
-    
-        </img>
-             
-        
-        <h2>Jerwaski Coleman</h2>
-        <h4>VCH Head Girls Basketball Coach</h4>
-        <p>Phone: (xxx) xxx-xxxx</p>
-        <p>Email: jcoleman@htdiocese.org</p>
-      </div>
-    </>
-  )
-}
-
-export default CoachCard
+export default CoachCard;
