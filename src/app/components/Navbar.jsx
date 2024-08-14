@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-vc-gold text-vc-blue p-3">
+      <nav className="navbar bg-vc-gold text-vc-blue mx-auto text-md">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -13,7 +13,7 @@ const Navbar = () => {
               role="button"
             >
               <svg
-                className="h-5 w-5"
+                className="h-8 w-8"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -28,7 +28,7 @@ const Navbar = () => {
               </svg>
             </div>
             <ul
-              className="menu menu-sm dropdown-content bg-vc-gold text-vc-blue font-bold rounded-box z-[1] mt-3 w-30 p-1 shadow"
+              className="menu menu-sm dropdown-content bg-vc-gold text-vc-blue font-bold rounded-box z-[1] mt-3 w-auto p-1 shadow"
               tabIndex={0}
             >
               <li>
@@ -47,24 +47,23 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center">
-          <Link href="/" className="btn btn-ghost font-extrabold text-2xl">
+          <Link
+            href="/"
+            className="btn btn-ghost font-extrabold text-xl md:text-3xl"
+          >
             Waski's Basketball Camp
           </Link>
         </div>
-        <div className="navbar-end m-2">
+        <div className="navbar-end m-2 sm:m-1">
           <button className="btn btn-ghost btn-circle">
-            <div className="avatar">
-              <div className="ring-primary ring-offset-vc-gold w-14 rounded-full ring ring-offset-2">
-                <img
-                  className="w-28 h-28 object-cover rounded-full"
-                  src="/images/vc_terrier.jpg"
-                  alt="Terrier Logo"
-                />
-              </div>
-            </div>
+            <img
+              className="w-10 h-10 object-scale-down rounded-full"
+              src="/images/vc_terrier.jpg"
+              alt="Terrier Logo"
+            />
           </button>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

@@ -5,13 +5,10 @@ const Hero = () => {
   const girlBballImg1 = "/images/girls_bball1.png";
 
   return (
-    <div
-      className="hero min-h-screen"
-      //style={{ backgroundImage: "url(/images/girls_bball1.png)" }}
-    >
-      <div className="hero-content flex-col lg:flex-row gap-12 lg:gap-0 m-3">
-        <div className="flex flex-col text-vc-gold w-full lg:w-1/2">
-          <h1 className="text-6xl font-bold mb-2">Coleman's Basketball Camp</h1>
+    <div className="hero min-h-screen">
+      <div className="hero-content flex-col md:flex-row gap-12 lg:gap-0 m-3">
+        <div className="flex flex-col text-vc-gold w-full md:w-1/2">
+          <h1 className="text-5xl font-bold mb-2">Coleman's Basketball Camp</h1>
           <h2 className="text-2xl font-semi-bold mt-2">
             Learn the fundamentals of basketball
           </h2>
