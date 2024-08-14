@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar bg-vc-gold text-vc-blue mx-auto text-md">
+      <nav className="navbar bg-vc-gold text-vc-blue mx-auto max-w-full p-2">
         <div className="navbar-start">
           <div className="dropdown">
             <div
