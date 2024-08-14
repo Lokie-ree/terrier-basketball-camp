@@ -1,4 +1,3 @@
-import PageSection from "@/components/PageSection";
 import React from "react";
 
 const sectionData = [
@@ -18,17 +17,11 @@ const sectionData = [
 
 const About = () => {
   return (
-    <div>
-      {sectionData.map((data, index) => (
-        <PageSection
-          key={index}
-          title={data.title}
-          paragraph={data.paragraph}
-          image={data.image}
-          textLeft={data.textLeft}
-        />
-      ))}
-    </div>
+    <main className="flex min-h-screen items-center justify-center bg-vc-blue overflow-x-clip">
+      <div>
+        <h1 className="font-extrabold text-vc-gold">Coming Soon</h1>
+      </div>
+    </main>
   );
 };
 

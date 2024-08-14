@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-vc-blue text-vc-gold p-5">
+      <div className="navbar bg-vc-gold text-vc-blue p-3">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -32,24 +32,24 @@ const Navbar = () => {
               tabIndex={0}
             >
               <li>
-                <a>Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a>About</a>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <a>Gallery</a>
+                <Link href="/gallery">Gallery</Link>
               </li>
               <li>
-                <a>Contact</a>
+                <Link href="/contact">Contact</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="navbar-center">
-          <button className="btn btn-ghost">
-            <a className="btn btn-ghost text-2xl">Waski's Basketball Camp</a>
-          </button>
+          <Link href="/" className="btn btn-ghost font-extrabold text-2xl">
+            Waski's Basketball Camp
+          </Link>
         </div>
         <div className="navbar-end m-2">
           <button className="btn btn-ghost btn-circle">
